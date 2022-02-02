@@ -4,17 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:background="@drawable/app_main_gradient"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/payment_btn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Payment"
-        />
+        <Button
+            android:id="@+id/payment_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Payment"
+            />
+
+    </LinearLayout>
+
+
+
     <include
         android:id="@+id/bottom_sheet"
         layout="@layout/cutom_bottom_sheet"
